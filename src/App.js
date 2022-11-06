@@ -1,13 +1,7 @@
-import './App.css';
+import Mapa from "./pages/Mapa";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>
-        
-      </h1>
-    </div>
-  );
+  return <Mapa />;  
 }
 
 export default App;
