@@ -24,6 +24,19 @@
   color: white;
 }
 
+.navbar{
+  width: 100%;
+}
+.divMapa{
+  margin:2rem;
+  padding: 3rem;
+}
+
+.textoNavbar{
+  padding-left: 3rem;
+}
+
+
 .App-link {
   color: #61dafb;
 }

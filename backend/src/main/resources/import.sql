@@ -1,0 +1,2 @@
+INSERT INTO tb_alert_location (last_name, location, name) VALUES ('Marcelo', 'codigo de exemplo', 'Assis');
+INSERT INTO tb_alert_location (last_name, location, name) VALUES ('Julio', 'codigo de exemplo2', 'Leal');
