@@ -9,21 +9,26 @@ const Mapa = () => {
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyDI-rqD6NdXwZu2KUuiDWkvlA4PmGIAJvw"
   })
+  
   return (
     <div className='mapa'>
       {isLoaded ? (
         <GoogleMap
           mapContainerStyle={{ width: '100%', height: '100%' }}
           center={{
-            lat: -27.590824,
-            lng: -48.551262,
+            lat:
+              -27.590824,
+            lng:
+              -48.551262,
           }}
-          zoom={15}
+          zoom={20}
         >
           <Marker
             position={{
-              lat: -27.590824,
-              lng: -48.551262,
+              lat:
+                -27.590824,
+              lng:
+                -48.551262,
             }}
             options={{
               label: {
