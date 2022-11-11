@@ -1,10 +1,10 @@
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { useState } from "react";
-import "./mapa.css";
+import "./../pages/mapa.css";
 
 const Mapa = (props) => {
-  const [latitude, setLatitude] = useState("-27.590824");
-  const [longetude, setLongetude] = useState("-48.551262");
+  const [latitude, setLatitude] = useState(props.latitude);
+  const [longetude, setLongetude] = useState(props.longetude);
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
@@ -12,26 +12,20 @@ const Mapa = (props) => {
   });
   return (
     <>
-      {console.log(latitude)}
-      {console.log(longetude)}
       <div className="mapa">
         {isLoaded ? (
           <GoogleMap
             mapContainerStyle={{ width: "100%", height: "100%" }}
             center={{
-              lat: -27.590824,
-              lng: -48.551262,
-              // lat: latitude,
-              // lng: longetude,
+              lat: Number(props.latitude),
+              lng: Number(props.longetude),
             }}
             zoom={15}
           >
             <Marker
               position={{
-                lat: -27.590824,
-                lng: -48.551262,
-                // lat: latitude,
-                // lng: longetude,
+                lat: Number(props.latitude),
+                lng: Number(props.longetude),
               }}
               options={{
                 label: {
